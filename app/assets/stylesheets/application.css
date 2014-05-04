@@ -67,3 +67,19 @@
     border-radius: 4px;
   }
 }
+
+.mastfoot {
+  z-index: 19;
+  bottom-margin: 15px;
+  bottom: 0;
+}
+
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+    width: 100%;
+}
