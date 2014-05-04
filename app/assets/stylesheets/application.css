@@ -16,13 +16,13 @@
  *= require_self
  */
 
-@font-face {
+ @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../assets/glyphicons-halflings-regular.eot');
   src: url('../assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
-       url('../assets/glyphicons-halflings-regular.woff') format('woff'), 
-       url('../assets/glyphicons-halflings-regular.ttf') format('truetype'), 
-       url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  url('../assets/glyphicons-halflings-regular.woff') format('woff'), 
+  url('../assets/glyphicons-halflings-regular.ttf') format('truetype'), 
+  url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -68,18 +68,13 @@
   }
 }
 
-.mastfoot {
-  z-index: 19;
-  bottom-margin: 15px;
-  bottom: 0;
-}
-
-
 
 /*
  * Footer
  */
 
-.mastfoot {
-    width: 100%;
+ .mastfoot {
+  width: 100%;
+  z-index: 19;
+  padding-bottom: 15px;
 }
