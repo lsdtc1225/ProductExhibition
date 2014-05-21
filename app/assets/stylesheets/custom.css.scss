@@ -1,5 +1,6 @@
 /* Variables & Mixins */
 $white: #fff;
+$black: #000;
 $gray: #555;
 $grayLight: #999;
 $grayMediumLight: #eaeaea;
@@ -45,8 +46,8 @@ html {
         padding-left: 0px;
     }
     .navbar {
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 5px;
+        padding-left: 5px;
     }
 }
 
@@ -54,41 +55,40 @@ html {
     .navbar-wrapper {
         margin-top: 20px;
         .container {
-            padding-right: 15px;
-            padding-left: 15px;
+            padding-right: 25px;
+            padding-left: 25px;
+            .navbar {
+                .container {
+                    .collapse {
+                        .navbar-right:last-child {
+                            margin-right:30px;
+                        }
+                    }
+                }
+            }
+            
         }
         .navbar {
             padding-right: 0px;
             padding-left: 0px;
             border-radius: 10px;
         }
-
+        // .navbar-nav .navbar-right:last-child {
+        //     margin-right: 30px;
+        // }
     }
 }
 
 
-
 /* footer */
-.footer {
-    margin-top: 25px;
-    padding-top: 5px;
-    border-top: 1px solid $grayMediumLight;
-    color: $grayLight;
-    a {
-        color: $gray;
-        &:hover {
-            color: $grayDarker;
-        }
-    }
-    small {
-        float: left;
-    }
+.navbar-fixed-bottom{
+    max-height: 25px;
     ul {
         float: right;
         list-style: none;
         li {
             float: left;
-            margin-left: 10px;
+            margin-left: 20px;
         }
     }
 }
