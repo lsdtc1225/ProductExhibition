@@ -1,0 +1,75 @@
+/* Variables & Mixins */
+$grayMedium: #777;
+
+/* Bootstrap-Sass */
+@import "bootstrap";
+.site-wrapper {
+    top: 0;
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+}
+
+.btn-lg {
+    padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+    .item {
+        padding-top: 50px;
+    }
+}
+
+@media (max-height: 460px) {
+    html, body {
+        height: 460px;
+    }
+    .footer {
+        position: absolute;
+        top: 428px;
+        padding-bottom: 0px;
+    }
+}
+
+@media (min-height: 460px) {
+    .footer {
+        position: fixed;
+        bottom: 0;
+        padding-bottom: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .item {
+        padding-top: 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    .item {
+        padding-top: 0px;
+    }
+}
+
+
+/* Carousel */
+.carousel {
+    height: 100%;
+    .carousel-indicators {
+        margin-bottom: 10px;
+    }
+    .carousel-inner {
+        height: 100%;
+        .carousel-caption {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+/* Image */
+.item {
+    height: 100%;
+    max-height: 100%;
+    background-color: $grayMedium;
+}

@@ -2,15 +2,16 @@
 
 <html>
     <head>
-        <title>ProductExhibition</title>
-        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <title>南京华特莱思模塑有限公司</title>
+        <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+        <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
         <%= csrf_meta_tags %>
+        <%= render 'application/shim' %>
     </head>
 
     <body>
-      <%= render 'application/header' %>
+        <%= render 'application/header' %>
         <%= yield %>
-      <%= render 'application/footer' %>
+        <%= render 'application/footer' %>
     </body>
 </html>
