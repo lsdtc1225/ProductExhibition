@@ -10,7 +10,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <%= link_to "南京华特莱思模塑有限公司logo", root_path, class: "navbar-brand" %>
+                    <%= link_to "南京华特莱思模塑有限公司", root_path, id: "logo", class: "navbar-brand" %>
+                    
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -31,10 +32,60 @@
                             </ul>
                         </li>
                         <!-- <li><a href="#contact">Contact</a></li> -->
-                        <li><%= link_to "联系合作", contact_path %></li>
+                        <li><%= link_to "联系合作", "#contact", "data-toggle" => "modal" %></li>
                     </ul>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class = "modal fade" id = "contact" role = "dialog">
+    <div class = "modal-dialog">
+        <div class = "modal-content">
+
+            <form class = "form-horizontal">
+                <div class = "modal-header">
+                    <h4> 联系我们</h4>
+                </div>
+
+
+                <div class = "modal-body">
+                    <div class = "form-group">
+                        <label for = "contact-name" class = "col-lg-2 control-label">姓名:</label>
+                        <div class = "col-lg-10">
+                            <input type = "text" class = "form-control" id = "contact-name" placeholder = "怎么称呼您？">
+                        </div>
+                    </div>
+
+                    <div class = "form-group">
+                        <label for = "contact-phone" class = "col-lg-2 control-label">联系电话:</label>
+                        <div class = "col-lg-10">
+                            <input type = "tel" class = "form-control" id = "contact-tel" placeholder = "11位手机号码（可选）">
+                        </div>
+                    </div>
+
+                    <div class = "form-group">
+                        <label for = "contact-email" class = "col-lg-2 control-label">电子邮件:</label>
+                        <div class = "col-lg-10">
+                            <input type = "email" class = "form-control" id = "contact-email" placeholder = "zhangsan@example.com">
+                        </div>
+                    </div>
+
+                    <div class = "form-group">
+                        <label for = "contact-msg" class = "col-lg-2 control-label">留言:</label>
+                        <div class = "col-lg-10">
+                            <textarea class = "form-control" rows = "8"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class = "modal-footer">
+                    <a class = "btn btn-default" data-dismiss = "modal">Close</a>
+                    <button class = "btn btn-primary" type = "submit">Send</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

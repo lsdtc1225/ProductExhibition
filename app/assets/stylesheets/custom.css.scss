@@ -79,6 +79,41 @@ html {
     }
 }
 
+#logo {
+    float: left;
+    margin-right: 10px;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    padding-top: 12px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.modal-dialog {
+    top: 70px;
+    .modal-content {
+        .form-horizontal {
+            .modal-header {
+                h4 {
+                    font-weight: bold;
+                    font-size: 200%;
+                    letter-spacing: 15px;
+                    color: $grayDarker;
+                }
+            }
+            .modal-body {
+                .form-group {
+                    label {
+                        color: $grayDarker;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 /* footer */
 .navbar-fixed-bottom{
