@@ -44,7 +44,7 @@
     <div class = "modal-dialog">
         <div class = "modal-content">
 
-            <form class = "form-horizontal">
+            <form class = "form-horizontal" action = "/contact" method = "GET">
                 <div class = "modal-header">
                     <h4> 联系我们</h4>
                 </div>
@@ -54,28 +54,28 @@
                     <div class = "form-group">
                         <label for = "contact-name" class = "col-lg-2 control-label">姓名:</label>
                         <div class = "col-lg-10">
-                            <input type = "text" class = "form-control" id = "contact-name" placeholder = "怎么称呼您？">
+                            <input type = "text" name = "contact_name" class = "form-control" id = "contact-name" placeholder = "">
                         </div>
                     </div>
 
                     <div class = "form-group">
                         <label for = "contact-phone" class = "col-lg-2 control-label">联系电话:</label>
                         <div class = "col-lg-10">
-                            <input type = "tel" class = "form-control" id = "contact-tel" placeholder = "11位手机号码（可选）">
+                            <input type = "tel" name = "contact_tel" class = "form-control" id = "contact-tel" placeholder = "">
                         </div>
                     </div>
 
                     <div class = "form-group">
                         <label for = "contact-email" class = "col-lg-2 control-label">电子邮件:</label>
                         <div class = "col-lg-10">
-                            <input type = "email" class = "form-control" id = "contact-email" placeholder = "zhangsan@example.com">
+                            <input type = "email" name = "contact_email" class = "form-control" id = "contact-email" placeholder = "">
                         </div>
                     </div>
 
                     <div class = "form-group">
                         <label for = "contact-msg" class = "col-lg-2 control-label">留言:</label>
                         <div class = "col-lg-10">
-                            <textarea class = "form-control" rows = "8"></textarea>
+                            <textarea name = "message" class = "form-control" rows = "8"></textarea>
                         </div>
                     </div>
 

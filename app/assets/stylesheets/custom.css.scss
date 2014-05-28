@@ -1,3 +1,7 @@
+/* Bootstrap-Sass */
+@import "bootstrap";
+
+
 /* Variables & Mixins */
 $white: #fff;
 $black: #000;
@@ -6,9 +10,11 @@ $grayLight: #999;
 $grayMediumLight: #eaeaea;
 $grayDarker: #222;
 
-
-/* Bootstrap-Sass */
-@import "bootstrap";
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 /* font-face */
 @font-face {
@@ -29,7 +35,7 @@ html {
     body {
         color: $white;
         text-align: center;
-        text-shadow: 0 1px 3px rgba(0,0,0,.5);
+        //text-shadow: 0 1px 3px rgba(0,0,0,.5);
         box-shadow: inset 0 0 100px rgba(0,0,0,.5);
     }
 }
@@ -126,4 +132,13 @@ html {
             margin-left: 20px;
         }
     }
+}
+
+/* debug */
+.debug_dump {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-top: 45px;
+    @include box_sizing;
 }
