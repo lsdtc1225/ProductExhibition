@@ -40,3 +40,5 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'mail', '~> 2.5.4'
+
